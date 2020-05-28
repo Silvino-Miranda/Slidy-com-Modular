@@ -26,7 +26,7 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 title: Text("Home"),
                 onTap: () {
-                  Modular.to.pushReplacementNamed('/');
+                  Modular.to.pushReplacementNamed('/home');
                 },
                 leading: Icon(
                   Icons.home,
