@@ -1,4 +1,5 @@
 import 'package:Delivery/app/app_controller.dart';
+import 'package:Delivery/app/modules/dashbord/dashbord_module.dart';
 import 'package:Delivery/app/modules/produto/produto_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class AppModule extends MainModule {
 
   @override
   List<Router> get routers => [
-        Router('/', module: HomeModule()),
+        Router('/', module: DashbordModule()),
         Router('/home/', module: HomeModule()),
         Router('/produto/', module: ProdutoModule()),
       ];
