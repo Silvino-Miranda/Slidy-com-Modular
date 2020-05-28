@@ -12,7 +12,7 @@ class ProdutoService {
     favorito: false,
     preco: 'R\$ 1.949,00',
     url:
-        'https://www.extra-imagens.com.br/Informatica/Notebook/50001400/1146843277/notebook-samsung-dual-core-4gb-500gb-tela-15-6-windows-10-essentials-e20-np350xbe-kdabr-50001400.jpg',
+        'https://images-na.ssl-images-amazon.com/images/I/610RFMr9aSL._AC_SL1000_.jpg',
   );
 
   // lista.add(p2);
@@ -28,8 +28,7 @@ class ProdutoService {
   Item criarProduto(int i) {
     var item = Item(
       descricao: 'Notebook Samsung Dual Core 4GB 500GB Tela 15.6" Win.10 - E20',
-      url:
-          'https://www.extra-imagens.com.br/Informatica/Notebook/50001400/1146843277/notebook-samsung-dual-core-4gb-500gb-tela-15-6-windows-10-essentials-e20-np350xbe-kdabr-50001400.jpg',
+      url: 'https://images-na.ssl-images-amazon.com/images/I/610RFMr9aSL._AC_SL1000_.jpg',
       tag: i.toString(),
       preco: 'R\$ ' + this.precoProduto().toStringAsFixed(2), // 'R\$ 1.949,00',
       favorito: this.trueOrFalse(),
