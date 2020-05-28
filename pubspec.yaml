@@ -25,6 +25,8 @@ dependencies:
   flutter_mobx: ^1.1.0 
   mobx: ^1.2.1
   flutter_modular: ^1.2.4
+  carousel_slider: ^2.1.0
+
   flutter:
     sdk: flutter
 

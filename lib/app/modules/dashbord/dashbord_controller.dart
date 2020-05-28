@@ -6,10 +6,8 @@ class DashbordController = _DashbordBase with _$DashbordController;
 
 abstract class _DashbordBase with Store {
   @observable
-  int value = 0;
+  bool favorito = false;
 
   @action
-  void increment() {
-    value++;
-  }
+  void increment() {}
 }

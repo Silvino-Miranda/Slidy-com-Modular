@@ -24,7 +24,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
               ListTile(
-                title: Text("Home"),
+                title: Text("MS Estofados"),
                 onTap: () {
                   Modular.to.pushReplacementNamed('/home');
                 },
@@ -39,8 +39,8 @@ class MyDrawer extends StatelessWidget {
                   Modular.to.pushReplacementNamed('/produto');
                 },
                 leading: Icon(
-                  Icons.favorite,
-                  color: Colors.redAccent,
+                  Icons.ac_unit,
+                  color: Colors.green,
                 ),
               ),
               ListTile(

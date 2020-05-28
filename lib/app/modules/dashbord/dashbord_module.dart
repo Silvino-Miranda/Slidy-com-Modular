@@ -10,7 +10,7 @@ class DashbordModule extends ChildModule {
 
   @override
   List<Router> get routers => [
-        Router('/', child: (_, args) => DashbordWidget()),
+        Router('/', child: (_, args) => DashbordPage()),
       ];
 
   static Inject get to => Inject<DashbordModule>.of();
