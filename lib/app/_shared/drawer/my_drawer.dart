@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class MyDrawer extends StatelessWidget {
   @override
@@ -13,24 +14,38 @@ class MyDrawer extends StatelessWidget {
             children: <Widget>[
               Divider(height: 15.0),
               ListTile(
-                onTap: () {},
                 title: Text("Dashbord"),
+                onTap: () {
+                  Modular.to.pushReplacementNamed('/');
+                },
                 leading: Icon(
                   Icons.dashboard,
                   color: Colors.blue,
                 ),
               ),
               ListTile(
-                onTap: () {},
                 title: Text("Home"),
+                onTap: () {
+                  Modular.to.pushReplacementNamed('/');
+                },
                 leading: Icon(
                   Icons.home,
                   color: Colors.amber,
                 ),
               ),
               ListTile(
-                onTap: () {},
+                title: Text("Produtos"),
+                onTap: () {
+                  Modular.to.pushReplacementNamed('/produto');
+                },
+                leading: Icon(
+                  Icons.favorite,
+                  color: Colors.redAccent,
+                ),
+              ),
+              ListTile(
                 title: Text("Favoritos"),
+                onTap: () {},
                 leading: Icon(
                   Icons.favorite,
                   color: Colors.redAccent,

@@ -27,29 +27,12 @@ class _HomePageState extends State<HomePage> {
         ),
         body: Center(
           child: ListView(
-            children: <Widget>[
-              Card(
-                margin: EdgeInsets.all(10.0),
-                color: Colors.yellow,
-                shadowColor: Colors.black,
-                elevation: 15.0,
-                child: Center(
-                  child: Column(
-                    children: <Widget>[
-                      Text('Teste de Silvino'),
-                      Text('Teste de Silvino'),
-                      Text('Teste de Silvino'),
-                      Text('Teste de Silvino'),
-                      Text('Teste de Silvino'),
-                    ],
-                  ),
-                ),
-              ),
-              for (var i = 1; i < 26; i++)
+            children: <Widget>[             
+              for (var i = 1; i < 51; i++)
                 ListTile(
                   onTap: () {},
-                  title: Text("Iae Nego  -  $i"),
-                  subtitle: Text("Tô aprendendo =)"),
+                  title: Text("Estofado Berlim"),
+                  subtitle: Text("Estofado Berlim 3 e 2 lugares - $i"),
                   leading: Icon(
                     Icons.cloud_circle,
                     color: Colors.lightBlue,
