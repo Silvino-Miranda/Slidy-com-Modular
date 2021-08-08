@@ -1,0 +1,10 @@
+myproject/lib/main.dart
+myproject/lib/app/app_module.dart
+myproject/lib/app/app_widget.dart
+myproject/lib/app/modules/home/home_module.dart
+myproject/lib/app/app_controller.dart
+myproject/lib/app/modules/home/home_page.dart
+myproject/test/app/app_controller_test.dart
+myproject/test/app/modules/home/home_page_test.dart
+myproject/lib/app/modules/home/home_controller.dart
+myproject/test/app/modules/home/home_controller_test.dart
