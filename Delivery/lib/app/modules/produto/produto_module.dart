@@ -1,5 +1,5 @@
-import 'package:Delivery/app/modules/produto/produto_controller.dart';
-import 'package:Delivery/app/modules/produto/produto_widget.dart';
+import 'package:delivery/app/modules/produto/produto_controller.dart';
+import 'package:delivery/app/modules/produto/produto_widget.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class ProdutoModule extends ChildModule {

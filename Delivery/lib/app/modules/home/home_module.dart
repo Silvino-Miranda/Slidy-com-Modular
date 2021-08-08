@@ -1,6 +1,6 @@
-import 'package:Delivery/app/modules/home/home_controller.dart';
+import 'package:delivery/app/modules/home/home_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:Delivery/app/modules/home/home_page.dart';
+import 'package:delivery/app/modules/home/home_page.dart';
 
 class HomeModule extends ChildModule {
   @override

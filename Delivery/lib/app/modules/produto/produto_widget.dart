@@ -1,4 +1,4 @@
-import 'package:Delivery/app/_shared/drawer/my_drawer.dart';
+import 'package:delivery/app/_shared/drawer/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 import '_shared/item_model.dart';

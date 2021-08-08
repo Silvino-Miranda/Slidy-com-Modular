@@ -1,5 +1,5 @@
-import 'package:Delivery/app/modules/dashbord/dashbord_controller.dart';
-import 'package:Delivery/app/modules/dashbord/dashbord_widget.dart';
+import 'package:delivery/app/modules/dashbord/dashbord_controller.dart';
+import 'package:delivery/app/modules/dashbord/dashbord_widget.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class DashbordModule extends ChildModule {
