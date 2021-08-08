@@ -1,9 +1,9 @@
 import 'package:olx_clone/src/produto/item_model.dart';
 
 class ProdutoService {
-  var produtos = List<Item>();
+  var produtos = <Item>[];
 
-  var lista = List<Item>();
+  var lista = <Item>[];
 
   var p2 = Item('', '', '', '');
   var p3 = Item('', '', '', '');
