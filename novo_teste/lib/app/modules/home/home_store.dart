@@ -1,12 +1,12 @@
-import 'package:flutter_triple/flutter_triple.dart';
+import 'package:mobx_triple/mobx_triple.dart';
 
-class HomeStore extends NotifierStore<Exception, int> {
+class HomeStore extends MobXStore<Exception, int> {
   HomeStore() : super(0);
 
   Future<void> increment() async {
     setLoading(true);
 
-    await Future.delayed(Duration(seconds: 1));
+    // await Future.delayed(Duration(seconds: 1));
 
     int value = state + 1;
     if (value < 5) {

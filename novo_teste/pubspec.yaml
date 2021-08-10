@@ -15,7 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.3
   flutter_modular: ^3.3.1
   flutter_triple: ^1.2.3+2
-  triple: ^1.2.0+1
+  mobx_triple: ^1.1.2+1
 
 dev_dependencies:
   flutter_modular_test: ^1.0.1
