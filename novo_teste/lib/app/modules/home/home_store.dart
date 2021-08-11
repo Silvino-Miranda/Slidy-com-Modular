@@ -9,7 +9,7 @@ class HomeStore extends MobXStore<Exception, int> {
     // await Future.delayed(Duration(seconds: 1));
 
     int value = state + 1;
-    if (value < 5) {
+    if (value < 6) {
       update(value);
     } else {
       setError(Exception('Error: state not can be > 4'));

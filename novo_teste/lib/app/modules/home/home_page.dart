@@ -21,15 +21,23 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
       body: ScopedBuilder<HomeStore, Exception, int>(
         store: store,
         onState: (_, counter) {
-          return Padding(
-            padding: EdgeInsets.all(10),
-            child: Text('$counter'),
+          return Center(
+            child: Text(
+              '$counter',
+              style: TextStyle(
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           );
         },
         onError: (context, error) => Center(
           child: Text(
             'Too many clicks',
-            style: TextStyle(color: Colors.red),
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: 20.0,
+            ),
           ),
         ),
       ),
