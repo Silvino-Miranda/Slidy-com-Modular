@@ -6,3 +6,7 @@
 
 
 *.swift
+
+*.kt
+
+CMakeLists.txt
