@@ -1,4 +1,4 @@
-# Delivery
+# delivery
 
 'A new Flutter project. Created by Slidy'
 

@@ -11,7 +11,7 @@ class _DashbordPageState extends State<DashbordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SCG - Delivery'),
+        title: Text('SCG - delivery'),
         actions: <Widget>[
           // FlatButton(
           //   onPressed: () {},

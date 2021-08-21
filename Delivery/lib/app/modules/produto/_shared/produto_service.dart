@@ -2,9 +2,9 @@ import 'dart:math';
 import 'item_model.dart';
 
 class ProdutoService {
-  var produtos = List<Item>();
+  var produtos = <Item>[];
 
-  var lista = List<Item>();
+  var lista = <Item>[];
 
   var p2 = Item(
     descricao: 'Notebook Samsung Dual Core 4GB 500GB Tela 15.6" Win.10 - E20',
@@ -28,7 +28,8 @@ class ProdutoService {
   Item criarProduto(int i) {
     var item = Item(
       descricao: 'Notebook Samsung Dual Core 4GB 500GB Tela 15.6" Win.10 - E20',
-      url: 'https://images-na.ssl-images-amazon.com/images/I/610RFMr9aSL._AC_SL1000_.jpg',
+      url:
+          'https://images-na.ssl-images-amazon.com/images/I/610RFMr9aSL._AC_SL1000_.jpg',
       tag: i.toString(),
       preco: 'R\$ ' + this.precoProduto().toStringAsFixed(2), // 'R\$ 1.949,00',
       favorito: this.trueOrFalse(),
