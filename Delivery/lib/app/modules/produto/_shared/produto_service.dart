@@ -31,8 +31,8 @@ class ProdutoService {
       url:
           'https://images-na.ssl-images-amazon.com/images/I/610RFMr9aSL._AC_SL1000_.jpg',
       tag: i.toString(),
-      preco: 'R\$ ' + this.precoProduto().toStringAsFixed(2), // 'R\$ 1.949,00',
-      favorito: this.trueOrFalse(),
+      preco: 'R\$ ${precoProduto().toStringAsFixed(2)}',
+      favorito: trueOrFalse(),
     );
 
     return item;

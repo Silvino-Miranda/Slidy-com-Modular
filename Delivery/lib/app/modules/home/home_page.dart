@@ -3,7 +3,7 @@ import '../../_shared/drawer/my_drawer.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
-  const HomePage({Key key, this.title = "Home"}) : super(key: key);
+  const HomePage({Key? key, this.title = "Home"}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(widget.title),
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             onPressed: () {},
             child: Icon(
               Icons.payment,
@@ -32,7 +32,8 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 onTap: () {},
                 title: Text("Estofado Berlim"),
-                subtitle: Text("Estofado Berlim 3 e 2 lugares \nPreço: R\$ 895.00"),
+                subtitle:
+                    Text("Estofado Berlim 3 e 2 lugares \nPreço: R\$ 895.00"),
                 leading: Icon(
                   Icons.check_box,
                   color: Colors.amber,

@@ -4,14 +4,12 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 class ProdutoModule extends Module {
   @override
-  final List<Bind> binds = [
-    Bind((i) => ProdutoController()),
-  ];
+  void binds(Injector i) {
+    i.addSingleton(ProdutoController.new);
+  }
 
   @override
-  final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, args) => ProdutoPage()),
-  ];
-
-  // static Inject get to => Inject<ProdutoModule>.of();
+  void routes(RouteManager r) {
+    r.add(ChildRoute('/', child: (context) => ProdutoPage()));
+  }
 }

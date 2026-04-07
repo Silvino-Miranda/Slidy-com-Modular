@@ -16,7 +16,7 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 title: Text("Dashbord"),
                 onTap: () {
-                  Modular.to.pushReplacementNamed('/');
+                  Modular.to.navigate('/');
                 },
                 leading: Icon(
                   Icons.dashboard,
@@ -26,7 +26,7 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 title: Text("MS Estofados"),
                 onTap: () {
-                  Modular.to.pushReplacementNamed('/home');
+                  Modular.to.navigate('/home');
                 },
                 leading: Icon(
                   Icons.home,
@@ -36,7 +36,7 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 title: Text("Produtos"),
                 onTap: () {
-                  Modular.to.pushReplacementNamed('/produto');
+                  Modular.to.navigate('/produto');
                 },
                 leading: Icon(
                   Icons.ac_unit,

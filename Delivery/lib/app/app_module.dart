@@ -7,19 +7,14 @@ import 'modules/produto/produto_module.dart';
 
 class AppModule extends Module {
   @override
-  final List<Bind> binds = [
-    Bind((i) => AppController()),
-  ];
+  void binds(Injector i) {
+    i.addSingleton(AppController.new);
+  }
 
   @override
-  final List<ModularRoute> routes = [
-    ModuleRoute('/', module: DashbordModule()),
-    ModuleRoute('/home/', module: HomeModule()),
-    ModuleRoute('/produto/', module: ProdutoModule()),
-  ];
-
-  // @override
-  // Widget get bootstrap => AppWidget();
-
-  // static Inject get to => Inject<AppModule>.of();
+  void routes(RouteManager r) {
+    r.add(ModuleRoute('/', module: DashbordModule()));
+    r.add(ModuleRoute('/home/', module: HomeModule()));
+    r.add(ModuleRoute('/produto/', module: ProdutoModule()));
+  }
 }

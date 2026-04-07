@@ -6,7 +6,7 @@ import 'item_model.dart';
 class ListItem extends StatelessWidget {
   final Item produto;
 
-  const ListItem({Key key, this.produto}) : super(key: key);
+  const ListItem({Key? key, required this.produto}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -7,24 +7,29 @@ class Item {
   String preco;
   bool favorito;
 
-  Item({this.descricao, this.url, this.tag, this.preco, this.favorito});
+  Item({
+    required this.descricao,
+    required this.url,
+    required this.tag,
+    required this.preco,
+    required this.favorito,
+  });
 
-  Item.fromJson(Map<String, dynamic> jsonDados) {
-    descricao = jsonDados['descricao'];
-    url = jsonDados['url'];
-    tag = jsonDados['tag'];
-    preco = jsonDados['preco'];
-    favorito = jsonDados['favorito'];
-  }
+  Item.fromJson(Map<String, dynamic> jsonDados)
+      : descricao = jsonDados['descricao'] as String,
+        url = jsonDados['url'] as String,
+        tag = jsonDados['tag'] as String,
+        preco = jsonDados['preco'] as String,
+        favorito = jsonDados['favorito'] as bool;
 
   Map<String, dynamic> get toJson {
-    Map<String, dynamic> jsonDados = new Map<String, dynamic>();
+    Map<String, dynamic> jsonDados = <String, dynamic>{};
 
-    jsonDados['descricao'] = this.descricao;
-    jsonDados['url'] = this.url;
-    jsonDados['tag'] = this.tag;
-    jsonDados['preco'] = this.preco;
-    jsonDados['favorito'] = this.favorito;
+    jsonDados['descricao'] = descricao;
+    jsonDados['url'] = url;
+    jsonDados['tag'] = tag;
+    jsonDados['preco'] = preco;
+    jsonDados['favorito'] = favorito;
 
     return jsonDados;
   }

@@ -4,14 +4,12 @@ import 'package:delivery/app/modules/home/home_page.dart';
 
 class HomeModule extends Module {
   @override
-  final List<Bind> binds = [
-    Bind((i) => HomeController()),
-  ];
+  void binds(Injector i) {
+    i.addSingleton(HomeController.new);
+  }
 
   @override
-  final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, args) => HomePage()),
-  ];
-
-  // static Inject get to => Inject<HomeModule>.of();
+  void routes(RouteManager r) {
+    r.add(ChildRoute('/', child: (context) => HomePage()));
+  }
 }

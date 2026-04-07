@@ -1,5 +1,4 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'item_model.dart';
@@ -7,7 +6,7 @@ import 'item_model.dart';
 class DetailItem extends StatefulWidget {
   final Item produto;
 
-  const DetailItem({Key key, this.produto}) : super(key: key);
+  const DetailItem({Key? key, required this.produto}) : super(key: key);
 
   @override
   _DetailItemState createState() => _DetailItemState();

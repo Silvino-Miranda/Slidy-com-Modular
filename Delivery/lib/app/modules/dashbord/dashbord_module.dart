@@ -4,14 +4,12 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 class DashbordModule extends Module {
   @override
-  final List<Bind> binds = [
-    Bind((i) => DashbordController()),
-  ];
+  void binds(Injector i) {
+    i.addSingleton(DashbordController.new);
+  }
 
   @override
-  final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, args) => DashbordPage()),
-  ];
-
-  // static Inject get to => Inject<DashbordModule>.of();
+  void routes(RouteManager r) {
+    r.add(ChildRoute('/', child: (context) => DashbordPage()));
+  }
 }
