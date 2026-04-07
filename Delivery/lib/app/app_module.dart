@@ -14,7 +14,7 @@ class AppModule extends Module {
   @override
   void routes(RouteManager r) {
     r.add(ModuleRoute('/', module: DashbordModule()));
-    r.add(ModuleRoute('/home/', module: HomeModule()));
-    r.add(ModuleRoute('/produto/', module: ProdutoModule()));
+    r.add(ModuleRoute('/home', module: HomeModule()));
+    r.add(ModuleRoute('/produto', module: ProdutoModule()));
   }
 }
